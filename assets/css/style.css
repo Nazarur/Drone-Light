@@ -46,7 +46,11 @@ h3 {
     font-size: 36px;
     line-height: 54px;
 }
-
+h4 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+}
 h5 {
     font-weight: 600;
     font-size: 36px;
@@ -120,6 +124,29 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
 }
+.menu-link {
+    position: relative;
+}
+
+.menu-link:before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .3s;
+}
+
+.menu-link:hover:before {
+    transform: scaleX(1);
+    transition: all .2s;
+
+}
+
 
 .header-menu {
     display: none;
@@ -568,6 +595,10 @@ header nav ul {
     border: #e5e5e5 solid 1px;
     border-radius: 10px;
 }
+.testimonial:hover .profile {
+    transform: scale(1.07);
+}
+
 .testimonial:last-child {
     margin-bottom: 0;
 }
@@ -585,6 +616,7 @@ header nav ul {
     width: 100%;
     max-width: 277px;
     margin-top: 30px;
+    transition: 0.3s;
 }
 .profile img {
     width: 28.4%;
@@ -629,6 +661,7 @@ header nav ul {
 
 footer {
     width: 100%;
+    margin-top: 56px;
     padding-top: 55px;
     padding-bottom: 36px;
     background-color: #000;
@@ -687,6 +720,7 @@ footer {
 
 @media (min-width:1000px) {
     footer {
+        margin-top: 100px;
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -703,10 +737,187 @@ footer {
 
 
 
+
+
+/* ========================================================================== */
+
+/*                         for mobile           */
+
+main {
+    height: max-content;
+}
+.mobile-section1 {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 106px;
+    margin-bottom: 50px;
+}
+.product-section {
+    width: 100%;
+    max-width: 725px;
+    margin-bottom: 50px;
+    margin-right: 5px;
+}
+.highlights {
+    max-width: 725px;
+    width: 100%;
+    margin-bottom: 17px;
+    border-radius: 8px;
+}
+.highlights img {
+    width: 100%;
+    border-radius: 8px;
+}
+.prewiews {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.prewiews img {
+    width: 100%;
+    max-width: 150px;
+    margin: 0;
+}
+.prewiew {
+    width: 100%;
+    max-width: 170px;
+}
+.product-discription {
+    width: 100%;
+    max-width: 296px;
+    margin: auto;
+}
+.product-discription-title p {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 22px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+.features ul {
+    margin-top: 16px;
+    margin-bottom: 27px;
+}
+.features ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+.features ul li:first-child {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.features ul li img {
+    width: auto;
+    margin-right: 23px;
+}
+.product-discription button {
+    width: 100%;
+    max-width: 280px;
+}
+
+
+.description-section {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    padding: 22px;
+    border: #e5e5e5 solid 1px;
+    border-radius: 10px;
+}
+.description-section p {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+
+
+
+
+@media (min-width:1000px) {
+    .mobile-section1 {
+        margin-top: 160px;
+        margin-bottom: 50px; 
+        overflow: hidden;
+    }
+    .product-section {
+        width: 60%;
+        margin: 0;
+        margin-right: 50px;
+        float: left;
+    }
+    .highlights {
+        padding: 17px 15px 11px 15px;
+        border: #e5e5e5 solid 1px;
+    }
+    .prewiew {
+        padding: 10px 10px 6px 10px;
+        border: #e5e5e5 solid 1px;
+        border-radius: 10px ;
+    }
+    .prewiew img {
+        border-radius: 10px;
+    }
+    .product-discription {
+        width: 35%;
+        float: right;
+    }
+
+}
+
 @media (max-width: 1000px) {
-    h1, h2, h3, h4, h5 {
+    h1, h2, h3, h5 {
         font-weight: 600;
         font-size: 36px;
         line-height: 54px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
